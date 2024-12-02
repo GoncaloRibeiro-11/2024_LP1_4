@@ -1,0 +1,167 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#caixa {
+    padding-bottom: 80px;
+    border: 2px solid black;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: center;
+    background-color: #fff;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.menu a.ativo {
+    color: red;
+    font-weight: bold;
+}
+
+.Dados-pessoais {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 20px;
+    text-align: left;
+    justify-content: flex-start;
+    flex-wrap: wrap; 
+}
+
+.imageMe {
+    float: left;
+    width: 140px;
+    height: 170px;
+    border: 2px solid black;
+    border-radius: 50%;
+    margin: 0;
+    object-fit: cover; 
+}
+
+.Image {
+    float: left;
+    width: 100px;
+    height: 100px;
+    display: block;
+    border: 2px solid black; 
+    margin-right: 10px;
+    border-radius: 50%; 
+    object-fit: cover;
+}
+
+.texto {
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.texto a {
+    color: blue;
+    text-decoration: none;
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.texto h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.texto p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+#interesses {
+    text-align: left;
+    margin-top: 120px;
+    padding-left: 10px;
+    border-left: 2px solid black; 
+}
+
+#interesses strong {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+#interesses p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+    padding-left: 0;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 14px;
+    clear: both;
+}
+
+@media (max-width: 768px) {
+    #caixa {
+        padding: 10px; 
+        max-width: 90%;
+        text-align: left; 
+    }
+
+    .menu {
+        flex-direction: column; 
+        gap: 5px;
+        text-align: center;
+    }
+
+    .Dados.pessoais {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .imageMe {
+        width: 100px; 
+        height: 100px;
+        margin-bottom: 10px;
+    }
+
+    .Image {
+        width: 80px; 
+        height: 80px;
+        margin-bottom: 7px;
+    }
+
+    .texto {
+        align-items: center; 
+        text-align: center;
+    }
+
+    #interesses {
+        margin-top: 20px;
+        text-align: center; 
+        padding-left: 0;
+        border: none;
+    }
+
+    footer {
+        text-align: center; 
+    }
+}
