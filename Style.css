@@ -1,4 +1,4 @@
-/* Definições Globais */
+
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
@@ -6,7 +6,7 @@ body {
     color: #333;
 }
 
-/* Cabeçalho */
+
 header {
     background: #0078d7;
     color: white;
@@ -42,7 +42,7 @@ header h1 {
     color: rgba(255, 255, 255, 0.5);
 }
 
-/* Conteúdo Principal */
+
 main {
     padding: 20px;
 }
@@ -60,7 +60,7 @@ p {
     margin-bottom: 20px;
 }
 
-/* Imagens */
+
 .MicrosoftImg img {
     max-width: 100%;
     height: auto;
@@ -69,16 +69,15 @@ p {
 }
 
 .imageMe {
-    max-width: 500px; /* Ajuste este valor para o tamanho desejado */
-    height: auto; /* Mantém a proporção da imagem */
+    max-width: 500px; 
+    height: auto; 
     margin: 20px auto;
-    display: block; /* Centraliza a imagem */
-    border-radius: 10px; /* Opcional: deixa as bordas arredondadas */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra leve */
-}
+    display: block; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
 
-/* Footer */
+
 footer {
     background: #0078d7;
     color: white;
@@ -98,7 +97,7 @@ footer .names p {
     margin: 0;
 }
 
-/* Caixa Principal */
+
 #caixa {
     max-width: 1200px;
     margin: auto;
@@ -108,7 +107,7 @@ footer .names p {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Responsividade */
+
 @media (max-width: 768px) {
     header h1 {
         font-size: 2rem;
