@@ -1,167 +1,125 @@
+/* Definições Globais */
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom, #e8f0fe, #ffffff);
+    color: #333;
 }
 
-#caixa {
-    padding-bottom: 80px;
-    border: 2px solid black;
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
-    text-align: center;
-    background-color: #fff;
-}
-
+/* Cabeçalho */
 header {
-    margin-bottom: 20px;
+    background: #0078d7;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 2.5rem;
+    margin: 0;
 }
 
 .menu {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
     margin-top: 10px;
 }
 
-.menu a.ativo {
-    color: red;
-    font-weight: bold;
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    margin: 0 10px;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
 }
 
-.Dados-pessoais {
-    display: flex;
-    align-items: center;
-    gap: 50px;
-    margin-bottom: 20px;
-    text-align: left;
-    justify-content: flex-start;
-    flex-wrap: wrap; 
+.menu a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
 }
 
-.imageMe {
-    float: left;
-    width: 140px;
-    height: 170px;
-    border: 2px solid black;
-    border-radius: 50%;
-    margin: 0;
-    object-fit: cover; 
+.divider {
+    color: rgba(255, 255, 255, 0.5);
 }
 
-.Image {
-    float: left;
-    width: 100px;
-    height: 100px;
-    display: block;
-    border: 2px solid black; 
-    margin-right: 10px;
-    border-radius: 50%; 
-    object-fit: cover;
+/* Conteúdo Principal */
+main {
+    padding: 20px;
+}
+
+main h1, h2, h3 {
+    color: #0078d7;
 }
 
 .texto {
-    flex-direction: column;
-    display: flex;
-    justify-content: flex-start;
-    text-align: left;
+    margin: 20px 0;
 }
 
-.texto a {
-    color: blue;
-    text-decoration: none;
-    margin: 5px 0;
-    font-size: 14px;
+p {
+    line-height: 1.6;
+    margin-bottom: 20px;
 }
 
-.texto h2 {
-    font-size: 18px;
-    margin-bottom: 10px;
-    font-weight: bold;
+/* Imagens */
+.MicrosoftImg img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.texto p {
-    margin: 5px 0;
-    font-size: 14px;
+.imageMe {
+    max-width: 500px; /* Ajuste este valor para o tamanho desejado */
+    height: auto; /* Mantém a proporção da imagem */
+    margin: 20px auto;
+    display: block; /* Centraliza a imagem */
+    border-radius: 10px; /* Opcional: deixa as bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra leve */
 }
 
-#interesses {
-    text-align: left;
-    margin-top: 120px;
-    padding-left: 10px;
-    border-left: 2px solid black; 
-}
 
-#interesses strong {
-    font-size: 16px;
-    font-weight: bold;
-    margin-bottom: 5px;
-    display: inline-block;
-}
-
-#interesses p {
-    margin: 0;
-    font-size: 14px;
-    line-height: 1.5;
-    padding-left: 0;
-}
-
+/* Footer */
 footer {
+    background: #0078d7;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
     margin-top: 20px;
-    font-size: 14px;
-    clear: both;
 }
 
+footer .names {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+footer .names p {
+    margin: 0;
+}
+
+/* Caixa Principal */
+#caixa {
+    max-width: 1200px;
+    margin: auto;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsividade */
 @media (max-width: 768px) {
-    #caixa {
-        padding: 10px; 
-        max-width: 90%;
-        text-align: left; 
+    header h1 {
+        font-size: 2rem;
     }
 
-    .menu {
-        flex-direction: column; 
-        gap: 5px;
-        text-align: center;
+    .menu a {
+        display: block;
+        margin: 5px 0;
     }
 
-    .Dados.pessoais {
-        flex-direction: column; 
-        align-items: center; 
-    }
-
-    .imageMe {
-        width: 100px; 
-        height: 100px;
-        margin-bottom: 10px;
-    }
-
-    .Image {
-        width: 80px; 
-        height: 80px;
-        margin-bottom: 7px;
-    }
-
-    .texto {
-        align-items: center; 
-        text-align: center;
-    }
-
-    #interesses {
-        margin-top: 20px;
-        text-align: center; 
-        padding-left: 0;
-        border: none;
-    }
-
-    footer {
-        text-align: center; 
+    footer .names {
+        flex-direction: column;
     }
 }
